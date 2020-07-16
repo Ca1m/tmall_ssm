@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ page language="java" contentType="text/html;charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix='fmt' %> 
@@ -56,16 +56,16 @@ function checkInt(id, name){
 
 $(function(){
 	$("a").click(function(){
-	    var deleteLink = $(this).attr("deleteLink");
-	    console.log(deleteLink);
-	    if("true" == deleteLink){
-	        var confirmDelete = confirm("确认要删除");
-	        if(confirmDelete) {
-	            return true;
-			}
+		var deleteLink = $(this).attr("deleteLink");
+		console.log(deleteLink);
+		if("true"==deleteLink){
+			var confirmDelete = confirm("确认要删除");
+			if(confirmDelete)
+				return true;
 			return false;
+			
 		}
-	})
+	});
 })
 </script>	
 </head>
